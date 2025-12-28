@@ -91,7 +91,7 @@
                 
 
            <section id="schedule">
-         <div class="hologram-overlay">
+           <div class="hologram-overlay">
                   <h2> LIVE DEPARTURE BOARD</h2>
                    <table>
                        <caption> REAL-TIME WARP GATE STATUS</caption>
@@ -131,8 +131,8 @@
                              <td >KEPLER-186F</td>
                              <td >C-09</td>
                              <td class="status-go">10:00</td>
-                             <td>ONE TIME</td>
-                             <td></td>
+                             <td class="status-go">ONE TIME</td>
+                             
                           </tr>
                           <tr>
                              <td>VOPID-0</td> 
@@ -149,7 +149,29 @@
                             </tr>
                        </tfoot>
                    </table>
-                </div>
+               </div> 
+           </section>
+           <section id="booking">
+               <div class="kiosk-interface">
+                  <h2>SELF-SERVICE TERMINAL</h2>
+                  <form action="#" method="POST">
+                     <fieldset>
+                        <legend>IDENTITY VERIFICATION</legend>
+                       <label for="first-name">FULL DESIGNATION</label>
+                       <input type="text" name="first_name" id="first-name" placeholder="ENTER NAME">
+                       <label for="id">CENETIC ID / PASSPORT</label>
+                       <input type="text" id="id" name="passport_id" placeholder="XX-0000-XX">
+                     </fieldset>
+
+                     <FIeldset>
+                        <legend>FLIGHT PARAMETERS</legend>
+                        <label for="COORD">TARGET SYSTEM</label>
+                        <input type="text" name="TARGET_SYSTEM" id="COORD" placeholder="SELECT COORD">
+                        
+                     </FIeldset>
+
+                  </form>
+               </div>
            </section>
        </main>
     </body>
