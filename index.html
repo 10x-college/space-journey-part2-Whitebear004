@@ -158,22 +158,31 @@
                      <fieldset>
                         <legend>IDENTITY VERIFICATION</legend>
                        <label for="first-name">FULL DESIGNATION</label>
-                       <input type="text" name="first_name" id="first-name" placeholder="ENTER NAME">
+                       <input type="text" name="first_name" id="first-name" placeholder="ENTER NAME"required>
                        <label for="id">CENETIC ID / PASSPORT</label>
-                       <input type="text" id="id" name="passport_id" placeholder="XX-0000-XX">
+                       <input type="text" id="id" name="passport_id" placeholder="XX-0000-XX" required>
                      </fieldset>
 
                      <FIeldset>
                         <legend>FLIGHT PARAMETERS</legend>
                         <label for="COORD">TARGET SYSTEM</label>
-                        <input type="text" name="TARGET_SYSTEM" id="COORD" placeholder="SELECT COORD">
-                        
+                        <input type="text" name="TARGET_SYSTEM" id="COORD" placeholder="SELECT COORD" required>
+                        <label for="CABIN-CLASS">CABIN CLASS</label>
+                        <select id="CABIN-CLASS" name="cabin_class" required > 
+                           <option value="Economy">ECONOMY</option>
+                           <option value="Business">BUSINESS</option>
+                           <option value="First">FIRST</option>
+                        </select>
                      </FIeldset>
-
+                     <button type="submit">AUTHORIZE CREDIT TRANSFER</button>
+                    
                   </form>
                </div>
            </section>
        </main>
+       <footer>
+         <p>TERMINAL X-OMEGA // OPERATED BY GALACTIC FEDERATION // SAFETY NOT GUARANTEED</p>
+       </footer>
     </body>
 </html>
  
